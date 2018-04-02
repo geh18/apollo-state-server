@@ -6,7 +6,7 @@ const { graphiqlExpress, graphqlExpress } = require('apollo-server-express');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.DB || 'mongodb://localhost:27017/bookstore', {
+mongoose.connect('mongodb://admin:hDhkpWaS1egQtqZ7@SG-zizera-13376.servers.mongodirector.com:45749,SG-zizera-13377.servers.mongodirector.com:45749,SG-zizera-13378.servers.mongodirector.com:45749/admin?replicaSet=RS-zizera-0&ssl=true', {
   useMongoClient: true,
 });
 
